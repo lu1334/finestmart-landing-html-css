@@ -1,0 +1,46 @@
+@use '../abstracts/abstracts' as *;
+
+
+.header {
+    margin-top: 20px;
+
+    .first_nav {
+        @include flexbox(row){
+            justify-content: space-between;
+        }
+        .svg_1{
+            margin-top: -10px;
+        }
+        .ul_first{
+            @include flexbox(row){
+                gap:50px;
+            .home{
+                color: $color_naranja;
+            }
+            }
+        }
+        .ul_second{
+            @extend .ul_first;
+            gap: 40px;
+    
+            svg{
+                width: 50%;
+                margin-top: -7px;
+            }
+            .singin{
+                color: $color_naranja;
+            }
+            .singup{
+                width: 80px;
+                height: 35px;
+                margin-top: -10px;
+                color: $color_blanco;
+                background: $color_naranja;
+                border-radius: 8px;
+                font-weight: 100;
+                padding-top: 10px;
+                padding-left: 20px;
+            }
+        }
+    }
+}

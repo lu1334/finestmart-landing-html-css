@@ -1,0 +1,12 @@
+
+@mixin flexbox($tipo){
+    @if $tipo=='row'{
+        display: flex;
+        @content;
+    }
+    @else{
+        display: flex;
+        flex-direction: column;
+        @content;
+    }
+}
