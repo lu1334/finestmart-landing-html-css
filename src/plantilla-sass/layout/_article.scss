@@ -18,7 +18,7 @@
         grid-area: vegetal;
         &::before{
             display: inline-block;
-            content: url(../../../public/img/Check.svg);
+            content: url('/img/Check.svg');
             margin-right: 5px;
             vertical-align: middle;
             
